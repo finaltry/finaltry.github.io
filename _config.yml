@@ -10,11 +10,10 @@ paginate: 10
 markdown: rdiscount
 permalink: pretty
 
-defaults:
-  -
-    scopes:
-      path: ""
-      type: "posts"
-    values:
-      layout: "default"
-
+#defaults:
+#  -
+#    scopes:
+#      path: ""
+#      type: "posts"
+#    values:
+#      layout: "default"
