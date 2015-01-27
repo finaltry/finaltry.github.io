@@ -1,2 +1,14 @@
+## Configuration for github
 highlighter: pygments
 github: [Repository metadata]
+
+## Configuration for Jekyll
+detach: yes
+defaults:
+  -
+    scopes:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
