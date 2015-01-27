@@ -4,6 +4,12 @@ github: [Repository metadata]
 
 ## Configuration for Jekyll
 detach: yes
+name: "Eric's Blog"
+description: "Eric's tech notes and life memory"
+paginate: 10
+markdown: rdiscount
+permalink: pretty
+
 defaults:
   -
     scopes:
