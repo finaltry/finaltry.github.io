@@ -1,5 +1,5 @@
 ---
-title: This is my first post.
+title: My First Post
 layout: default
 ---
 
