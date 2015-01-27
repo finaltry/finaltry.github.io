@@ -1,6 +1,6 @@
 ---
 title: My First Post
-layout: default
+layout: post
 ---
 
 This is my first post.
