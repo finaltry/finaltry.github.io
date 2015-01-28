@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts limit: 2 %}
+{% for post in paginator.posts %}
   <div class="row-fluid">
     <div class="span12">
       <h3>{{ post.title }}</h3>
