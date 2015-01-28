@@ -6,7 +6,7 @@ github: [Repository metadata]
 detach: yes
 name: "Eric's Blog"
 description: "Eric's tech notes and life memory"
-paginate: 10
+paginate: 2
 markdown: rdiscount
 permalink: pretty
 
