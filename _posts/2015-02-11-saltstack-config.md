@@ -82,4 +82,6 @@ salt '*' test.ping
 salt '*' disk.usage
 ```
 
+### 參考資料
 
+[Saltstak 官網](docs.saltstack.com)
