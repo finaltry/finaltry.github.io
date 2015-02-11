@@ -3,7 +3,7 @@ title: Saltstack Config
 layout: post
 ---
 
-### Saltstack 簡介
+### Saltstack 基本架構
 
 ### Saltstack 安裝 (以 Ubuntu 14.04 為例)
 
@@ -74,10 +74,12 @@ salt-key -a minion-id (在 master 上接受 minion-id 的金鑰)
 salt '*' test.ping
 ```
 
-```*``` 為執行指令的目的端, ```test``` 為執行模組 (Execution module), ```ping``` 為執行指令!
+```*``` 為執行指令的目的端, ```test``` 為執行模組 (Execution module), ```ping``` 為被執行的指令或函式!
 
 第二個測試指令: 顯示磁碟使用狀況
 
 ```
 salt '*' disk.usage
 ```
+
+
