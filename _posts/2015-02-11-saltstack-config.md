@@ -84,4 +84,4 @@ salt '*' disk.usage
 
 ### 參考資料
 
-[Saltstak 官網](docs.saltstack.com)
+[Saltstak 官網](http://docs.saltstack.com)
