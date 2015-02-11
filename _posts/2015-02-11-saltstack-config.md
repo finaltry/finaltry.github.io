@@ -1,4 +1,4 @@
-﻿---
+---
 title: Saltstack Config
 layout: post
 ---
