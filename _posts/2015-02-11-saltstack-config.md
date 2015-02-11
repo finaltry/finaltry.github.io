@@ -3,5 +3,7 @@ title: Saltstack Config
 layout: post
 ---
 
-## 安裝 Saltstack (in Ubuntu)
+### Saltstack 簡介
+
+### Saltstack (以 Ubuntu 為例)
 
