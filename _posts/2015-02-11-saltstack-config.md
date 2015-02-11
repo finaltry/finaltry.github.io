@@ -32,3 +32,36 @@ sudo apt-get install salt-minion
 
 ### Saltstack 設定
 
+#### 修改 Minion 設定檔及傳送公開金鑰
+
+Minion 啟動時會嘗試去連線 Master, 若沒有特別設定 Master 的 hostname, 則預設為 salt! Minion 第一次與 Master 連線時, 會將自己的 id 及公開金鑰傳遞給 Master, 並且 請求 Master 接受, Minion 會在 Master 接受公開金鑰之後才能接受 Master 所指派的指令!
+所以在首次啟動 Minion 之前, 需修改 Minion 的設定檔 (/etc/salt/minion), 加入以下兩個設定:
+
+```
+master: master-hostname
+id: minion-id
+```
+
+#### Master 接受 Minion 之公開金鑰
+
+Master 可使用 salt-key 指令來顯示及接受 Minions 所送出的公開金鑰!
+
+```
+salt-key -L (在 master 上顯示所有以接受及未接受之金鑰)
+```
+
+```
+salt-key -A (Master 用以接受所有金鑰)
+```
+
+```
+salt-key -f minion-id (在 master 上顯示 minion-id 所傳送的金鑰內容)
+```
+
+```
+salt-call key.finger --local (在 minion 上顯示本地端的金鑰內容)
+```
+
+```
+salt-key -a minion-id (在 master 上接受 minion-id 的金鑰)
+```
