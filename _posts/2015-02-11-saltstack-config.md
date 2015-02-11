@@ -5,7 +5,7 @@ layout: post
 
 ### Saltstack 簡介
 
-### Saltstack 安裝(以 Ubuntu 14.04 為例)
+### Saltstack 安裝 (以 Ubuntu 14.04 為例)
 
 #### 新增 Ubuntu Repository
 
@@ -64,4 +64,20 @@ salt-call key.finger --local (在 minion 上顯示本地端的金鑰內容)
 
 ```
 salt-key -a minion-id (在 master 上接受 minion-id 的金鑰)
+```
+
+#### 連線及指令測試
+
+第一個測試指令: 回應 Master 的呼叫
+
+```
+salt '*' test.ping
+```
+
+```*``` 為執行指令的目的端, ```test``` 為執行模組 (Execution module), ```ping``` 為執行指令!
+
+第二個測試指令: 顯示磁碟使用狀況
+
+```
+salt '*' disk.usage
 ```
